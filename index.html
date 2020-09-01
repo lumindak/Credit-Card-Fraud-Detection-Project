@@ -10,24 +10,117 @@
         <div class="container">
             <h1>Credit Card Fraud</h1>
             <h4>
-                Credit card fraud is a persistent issue and one that credit card companies and banks constantly need to consider. Many banks and credit card companies offer free monitoring and alerts in an attempt to identify potentially fraudulent activity as soon as possible. With the standard practice of reimbursing customers for fraudulent charges on their credit cards and accounts, it is in the best interest of credit card companies and banks to identify, stop and prevent fraudulent activity. 
+                Credit card fraud is a persistent issue and one that credit card companies and banks constantly 
+                need to consider. Many banks and credit card companies offer free monitoring and alerts in an 
+                attempt to identify potentially fraudulent activity as soon as possible. With the standard 
+                practice of reimbursing customers for fraudulent charges on their credit cards and accounts, 
+                it is in the best interest of credit card companies and banks to identify, stop and prevent 
+                fraudulent activity. 
             </h4>
         </div>
     </head>
     <br>
     <body>
-        <div class="container col-md-2">
-                <a class="pill" href=#>Fit</a>
+        <div class="row" class="container">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10" class="container">
+                <h4> ETL Process </h4>
+                <h5>Data was downloaded from Kaggle. Initial cleanup and transformation was done in Colab.
+                    Amazon RDS was used to store the data. The data set contains 284,807 credit card transactions.
+                </h5>
+
+            </div>
         </div>
-        <br>
-        <div class="container col-md-2">
-                <a class="pill" href=#>Model</a>
-        </div>
-        <br>
-        <div class="container col-md-2">
-            <a class="pill" href=#>Predict</h3>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <img src="etl.png" Hspace="10" Vspace="10" alt="" style="width:100%" class="img-thumbnail">
+                <div class="centered"> </div>
+
+            </div>
+            <div class="col-sm-1"></div>
         </div>
 
+        <div class="row" class="container">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <br><br> <br><br> <br><br>
+                <hr style="height:2px;border-width:0;color:white;background-color:white">
+                <h4> Challenge </h4>
+                <h5>Data was highly imbalanced. There were only 0.17% fraud transactions in the data set.
+                    Any model that always predict 'non-fraud' will be accurate at 99.83% of the time.
+                </h5>
+                <h4> Solution </h4>
+                <h5>We reasampled the data to have equal number of fraud and non-fraud transactions.
+                    Also several models were tried and the performance was compared based on the
+                    precision/recall values. 
+                </h5>
+                <h4> Models </h4>
+              
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-7">
+                <h5 class="" >
+                    <ul style="list-style-type:square;">
+                      <li>K-Nearest Neighbour</li>
+                 
+                      <li>Logistic </li>
+                
+                      <li>Simple Neural Network</li>
+               
+                      <li>Deep Neural Network</li>
+               
+                      <li>Support Vector Machines</li>
+            
+                      <li>Random Forest</li>
+                    </ul>
+                  </h5>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <hr style="height:2px;border-width:0;color:white;background-color:white">
+                <h4> Best Model </h4>
+                <h5> The best model was found to be the Random Forest Model. This model can predict
+                    fraud transacrtions at a 93% precision.
+                    <br>
+                    <figure>
+                    <img src="confusion.png" Hspace="10" Vspace="10" alt="Confusion Matrix" style="width:50%" class="img-thumbnail">
+                    <figcaption>Confusion Matrix -'1' represents fraud transactions </figcaption>
+                    </figure>
+                    <br>
+
+                 <hr style="height:2px;border-width:0;color:white;background-color:white">
+                Used: Colab, Amazon RDS, PySpark,sklern, TensorFlow, Keras, PostgreSQL
+                <br>
+                <hr style="height:2px;border-width:0;color:white;background-color:white">
+                Github: https://github.com/lumindak/Credit-Card-Fraud-Detection-Project
+                </h5>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <br><br>
+                <h4> Implementation </h4>
+                <figure>
+                    <img src="chart.png" Hspace="10" Vspace="10" alt="Confusion Matrix" style="width:100%" class="img-thumbnail">
+                    <figcaption> </figcaption>
+                    </figure>
+            </div>
+
+            <div class="col-sm-1"></div>
+        <div
     </body>
 
 </html>
