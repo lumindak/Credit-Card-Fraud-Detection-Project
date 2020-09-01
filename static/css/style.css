@@ -1,6 +1,9 @@
 body {
-    background-image: url(https://thumbs.dreamstime.com/z/double-explosure-businesss-charts-financial-district-m-megapolis-city-73918609.jpg);
-  }
+    /* background-image: url(https://thumbs.dreamstime.com/z/double-explosure-businesss-charts-financial-district-m-megapolis-city-73918609.jpg); */
+    background-image: url(../../creditcard.jpg);
+    background-repeat: repeat-y,repeat-x;
+    flood-color: aliceblue;
+}
 
 .container {
     background-color: rgba(141, 178, 247, 0.486);
@@ -28,7 +31,7 @@ h1, h4 {
 }
 
 .pill {
-    color: black;
+    color: white;
     font-size: x-large;
     /* font-weight: bold; */
 }
