@@ -14,4 +14,5 @@ compared based on the precision/recall values. The best model was found to be th
 transacrtions at a 93% precision.
 
 Used: Colab, Amazon RDS, PySpark,sklern, TensorFlow, Keras, PostgreSQL
+<br>
 Url: https://lumindak.github.io/Credit-Card-Fraud-Detection-Pr
