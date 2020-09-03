@@ -15,4 +15,4 @@ transacrtions at a 93% precision.
 
 Used: Colab, Amazon RDS, PySpark,sklern, TensorFlow, Keras, PostgreSQL
 <br>
-Url: https://lumindak.github.io/Credit-Card-Fraud-Detection-Pr
+Url: https://lumindak.github.io/Credit-Card-Fraud-Detection-Project/
